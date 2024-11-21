@@ -1,0 +1,341 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+/* Блок "Добро пожаловать на мой сайт мини-игр" */
+.welcome {
+    background-image: url(./image/gbtop.jpeg);
+    height: 800px;
+}
+
+.welcome__stars {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome__stars-star1 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 36px;
+    top: -402px;
+}
+
+.welcome__stars-star2 {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: -63px;
+    top: -380px;
+}
+.star2 {
+    width: 57px;
+}
+
+.welcome__stars-star3 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 848px;
+    top: 60px;
+}
+.star3 {
+    width: 37px;
+}
+
+.welcome__stars-star4 {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 930px;
+    top: 80px;
+}
+.star4 {
+    width: 83px;
+}
+.welcome__stars-star5 {
+    position: absolute;
+    right: -610px;
+    top: -820px;
+}
+
+.welcome__content {
+    position: relative;
+    z-index: 2;
+}
+
+.welcome__title {
+    color: rgb(32, 32, 39);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 196px;
+    padding-bottom: 24px;
+}
+
+.welcome__text {
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.welcome__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 191px;
+    padding: 16px 28px 16px 28px;
+    margin-bottom: 156px;
+    border: 1px solid rgb(32, 32, 39);
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.welcome__button:hover {
+    background-color: #ffffff;
+    border: 1px solid rgb(32, 32, 39);
+    color: black;
+}
+
+/* Общие стили для панели навигации */
+.navigation {
+    background-color: rgb(188, 236, 48);
+    padding: 19px 0;
+    margin-top: 182px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Стили списка */
+.navigation__list {
+    display: flex;
+    gap: 51px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    animation: scroll-left 15s linear infinite;
+}
+/* Анимация прокрутки */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0); /* Начальная позиция */
+    }
+    100% {
+        transform: translateX(-100%); /* Полный сдвиг влево */
+    }
+}
+
+/* Стили для элементов списка */
+.navigation__item {
+    display: flex;
+    align-items: center;
+}
+
+/* Ссылки */
+.navigation__link {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    white-space: nowrap; /* Убирает перенос слов */
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Стиль при наведении */
+.navigation__link:hover {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.411);
+}
+
+
+
+
+/* Блок "Об играх" */
+/* Общие стили для блока */
+.games {
+    background-color: #202027;
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.games__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.games__title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 94px;
+    margin-bottom: 24px;
+}
+
+.games__text {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 72px;
+}
+
+.games__stars {
+    position: relative;
+    z-index: 1;
+}
+.games__stars-star1 {
+    position: absolute;
+    right: -250px;
+    top: -220px;
+}
+.games__stars-star2 {
+    position: absolute;
+    left: -80px;
+    top: 336px;
+}
+.gamestar2 {
+    width: 32px;
+}
+.games__stars-star3 {
+    position: absolute;
+    left: -70px;
+    top: 380px;
+}
+.gamestar3 {
+    width: 55px;
+}
+
+.games__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+.games__card {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    overflow: hidden;
+    width: calc(33.333% - 20px); /* 3 карточки в ряд */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.games__card:hover {
+    transform: scale(1.05); /* Увеличение карточки на 5% */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Более яркая тень при наведении */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход */
+}
+
+.games__card:nth-child(1) {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.games__card:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: -39px;
+}
+
+.games__card:nth-child(3) {
+    margin-top: 0;
+}
+
+.games__card:nth-child(4) {
+    margin-top: 0;
+}
+
+.games__card:nth-child(5) {
+    margin-top: 39px;
+}
+
+.games__card:nth-child(6) {
+    margin-top: 0;
+}
+
+.games__image {
+    background-size: cover;
+    background-position: center;
+    height: 314px;
+    width: 378px;
+}
+
+.games__info {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+    text-align: left;
+}
+
+.games__subtitle {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 26px;
+}
+
+.games__name {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+}
