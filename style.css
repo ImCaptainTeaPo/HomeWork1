@@ -196,7 +196,8 @@ a {
     background-color: #202027;
     padding: 60px 20px;
     color: #fff;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat';
+    overflow: hidden;
 }
 
 .games__container {
