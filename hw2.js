@@ -58,6 +58,16 @@
 
 
 // ex8
-let age = prompt("Сколько вам лет?");
+// let age = prompt("Сколько вам лет?");
 
-alert("Вам " + age + " лет!");
+// alert("Вам " + age + " лет!");
+
+
+// ex9
+let user = {
+    name: "Алексей",
+    age: 25,
+    isAdmin: true
+};
+
+console.log(user);
