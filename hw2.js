@@ -11,3 +11,7 @@
 
 // alert(firstIphoneYear);
 
+// ex3
+// let jsCreator = "Brendan Eich";
+
+// alert(jsCreator);
