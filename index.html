@@ -7,6 +7,7 @@
     <title>Сайт мини-игр</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 375px)">
 </head>
 
 
@@ -22,6 +23,7 @@
 
         <div class="welcome__content center">
             <h1 class="welcome__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
+            <h1 class="welcome__title-mob">Добро пожаловать<br> <br>на мой сайт мини-игр</h1>
             <p class="welcome__text">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай
                 <strong>«Поехали»</strong> и <strong>приступай</strong>.
             </p>
@@ -31,6 +33,7 @@
                 <div class="welcome__stars-star3"><img class="star3" src="image/Starsmallgreen.svg" alt=""></div>
                 <div class="welcome__stars-star4"><img class="star4" src="image/Starsmallblack.svg" alt=""></div>
                 <div class="welcome__stars-star5"><img class="star5" src="image/bigstartop.svg" alt=""></div>
+                <div class="welcome__stars-starmob"><img class="starmob" src="image/bigstarmob.svg" alt=""></div>
             </div>
             <a href="#games" class="welcome__button">Поехали!</a>
         </div>
@@ -40,37 +43,37 @@
                     <a href="#quiz" class="navigation__link">Викторина</a>
                 </li>
                 <div class="navigation__item">
-                    <img src="image/Starfullblack.svg" alt="">
+                    <img class="navigation__item-star" src="image/Starfullblack.svg" alt="">
                 </div>
                 <li class="navigation__item">
                     <a href="#guess-number" class="navigation__link">Угадай число</a>
                 </li>
                 <div class="navigation__item">
-                    <img src="image/Starfullblack.svg" alt="">
+                    <img class="navigation__item-star" src="image/Starfullblack.svg" alt="">
                 </div>
                 <li class="navigation__item">
                     <a href="#reverse-text" class="navigation__link">Переверни текст</a>
                 </li>
                 <div class="navigation__item">
-                    <img src="image/Starfullblack.svg" alt="">
+                    <img class="navigation__item-star" src="image/Starfullblack.svg" alt="">
                 </div>
                 <li class="navigation__item">
                     <a href="#simple-game" class="navigation__link">Простая арифметика </a>
                 </li>
                 <div class="navigation__item">
-                    <img src="image/Starfullblack.svg" alt="">
+                    <img class="navigation__item-star" src="image/Starfullblack.svg" alt="">
                 </div>
                 <li class="navigation__item">
                     <a href="#rock-paper-scissors" class="navigation__link">Камень, ножницы, бумага </a>
                 </li>
                 <div class="navigation__item">
-                    <img src="image/Starfullblack.svg" alt="">
+                    <img class="navigation__item-star" src="image/Starfullblack.svg" alt="">
                 </div>
                 <li class="navigation__item">
                     <a href="#random-colors" class="navigation__link">Генератор случайных цветов </a>
                 </li>
                 <div class="navigation__item">
-                    <img src="image/Starfullblack.svg" alt="">
+                    <img class="navigation__item-star" src="image/Starfullblack.svg" alt="">
                 </div>
             </ul>
         </nav>
@@ -80,6 +83,7 @@
     <section class="games" id="games">
         <div class="games__container">
             <h2 class="games__title">Об играх</h2>
+            <h2 class="games__title-mob">Мини-игры</h2>
             <p class="games__text">
                 В моей коллекции представлено 6 игр на разные темы. <br>
                 Игры несложные — в них может поиграть каждый. <br>
@@ -97,6 +101,8 @@
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №1</h3>
                         <p class="games__name">Угадай число</p>
+                        <p class="games__text-mob">Попробуй угадать случайное число&nbsp;от 1 до 100.</p>
+                        <button class="games__button">Играть!</button>
                     </div>
                 </a>
                 <!-- Карточка 2 -->
@@ -105,6 +111,8 @@
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №2</h3>
                         <p class="games__name">Простая арифметика</p>
+                        <p class="games__text-mob">Попробуй решить простые арифметические&nbsp;задачи.</p>
+                        <button class="games__button">Играть!</button>
                     </div>
                 </a>
                 <!-- Карточка 3 -->
@@ -113,6 +121,8 @@
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №3</h3>
                         <p class="games__name">Переверни текст</p>
+                        <p class="games__text-mob">Попробуй ввести текст, который будет&nbsp;перевернут.</p>
+                        <button class="games__button">Играть!</button>
                     </div>
                 </a>
                 <!-- Карточка 4 -->
@@ -121,6 +131,8 @@
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №4</h3>
                         <p class="games__name">Камень, ножницы, бумага</p>
+                        <p class="games__text-mob">Отвечай на вопросы викторины с&nbsp;вариантами ответов.</p>
+                        <button class="games__button">Играть!</button>
                     </div>
                 </a>
                 <!-- Карточка 5 -->
@@ -129,6 +141,8 @@
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №5</h3>
                         <p class="games__name">Простая викторина</p>
+                        <p class="games__text-mob">Сыграй в популярную игру против&nbsp;компьютера.</p>
+                        <button class="games__button">Играть!</button>
                     </div>
                 </a>
                 <!-- Карточка 6 -->
@@ -137,11 +151,18 @@
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №6</h3>
                         <p class="games__name">Генератор случайных цветов</p>
+                        <p class="games__text-mob">Игра, в которой при клике на&nbsp;кнопку фон страницы
+                            меняется&nbsp;на
+                            случайный.</p>
+                        <button class="games__button">Играть!</button>
                     </div>
                 </a>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <h2 class="footer__title">Все права защищены.</h2>
+    </footer>
 
 </body>
 

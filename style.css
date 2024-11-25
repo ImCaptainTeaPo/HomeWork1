@@ -75,6 +75,12 @@ a {
     right: -610px;
     top: -820px;
 }
+.welcome__stars-starmob {
+    display: none;
+}
+.starmob {
+    display: none;
+}
 
 .welcome__content {
     position: relative;
@@ -90,6 +96,9 @@ a {
     text-align: left;
     padding-top: 196px;
     padding-bottom: 24px;
+}
+.welcome__title-mob {
+    display:none;
 }
 
 .welcome__text {
@@ -216,6 +225,9 @@ a {
     margin-top: 94px;
     margin-bottom: 24px;
 }
+.games__title-mob {
+    display: none;
+}
 
 .games__text {
     color: rgb(255, 255, 255);
@@ -341,4 +353,30 @@ a {
     line-height: 39px;
     letter-spacing: 0px;
     text-align: left;
+}
+
+.games__text-mob {
+    display: none;
+}
+.games__button {
+    display: none;
+}
+
+
+
+
+
+.footer {
+    background: rgb(189, 237, 53);
+    height: 150px;
+}
+.footer__title {
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
 }

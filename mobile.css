@@ -1,0 +1,246 @@
+@media screen and (max-width: 375px) {
+
+    /* Общие настройки */
+    body {
+        margin: 0;
+        font-family: Montserrat;
+    }
+
+    .welcome {
+        height: auto; /* Высота блока будет подстраиваться под содержимое */
+    }
+
+    .welcome__content {
+        position: relative;
+        text-align: center; /* Центрируем текст и элементы */
+    }
+
+    .welcome__title {
+        display: none;
+    }
+    .welcome__title-mob {
+        display: block;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 147px;
+    }
+
+    .welcome__text {
+        font-size: 16px; /* Уменьшаем размер текста */
+        line-height: 22px; /* Межстрочный интервал */
+        margin: 0 auto 36px; /* Отступ снизу — 36px */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .star1 {
+        width: 21px;
+        height: 21px;
+    }
+    .welcome__stars-star1 {
+        left: 90px;
+        top: -422px;
+    }
+    .star2 {
+        width: 35px;
+        height: 35px;
+    }
+    .welcome__stars-star2 {
+        left: 40px;
+        top: -400px;
+    }
+    .star3 {
+        width: 18px;
+        height: 18px;
+    }
+    .welcome__stars-star3 {
+        z-index: 3;
+        left: 260px;
+        top: 46px;
+    }
+    .star4 {
+        width: 40px;
+        height: 40px;
+    }
+    .welcome__stars-star4 {
+        left: 270px;
+        top: 70px;
+    }
+    .star5 {
+        display: none;
+    }
+    .welcome__stars-star5 {
+        display: none;
+    }
+    .welcome__stars-starmob {
+        display: block;
+        position: absolute;
+        right: -90px;
+        top: -600px;
+    }
+    .starmob {
+        display: block;
+    }
+
+    .welcome__button {
+        width: 285px;
+        padding: 16px 28px;
+        font-size: 16px;
+        margin: 0 auto;
+        display: block; /* Кнопка занимает всю строку */
+        box-sizing: border-box;
+    }
+
+    .navigation {
+        margin-top: 82px; /* Отступ сверху от кнопки */
+        overflow: hidden;
+        padding: 17px;
+    }
+
+    .navigation__list {
+        animation: scroll-left 15s linear infinite;
+        gap: 28px;
+        align-items: flex-end;
+    }
+    
+    .navigation__link {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .navigation__item-star {
+        width: 19px;
+        height: 19px;
+    }
+
+/* блок МИНИ-ИГРЫ */
+
+    .games {
+        padding: 48px 16px;
+    }
+
+    .games__title {
+        display: none;
+    }
+    .games__text {
+        display: none;
+    }
+    .games__stars {
+        display: none;
+    }
+
+    .games__title-mob {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+
+    .games__list {
+        row-gap: 24px;
+    }
+
+    .games__card {
+        min-width: 343px;
+    }
+
+    .games__info {
+        padding: 30px;
+    }
+
+    .games__subtitle {
+        display: none;
+    }
+
+    .games__name {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .games__text-mob {
+        display: block;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+
+    .games__button {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 100%; /* Кнопка занимает всю ширину блока */
+        padding: 16px 0;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #202027;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .games__button:hover {
+        background-color: #ffffff;
+        color: #202027;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .games__card:nth-child(1),
+    .games__card:nth-child(2),
+    .games__card:nth-child(3),
+    .games__card:nth-child(4),
+    .games__card:nth-child(5),
+    .games__card:nth-child(6) {
+        margin-top: 0 !important; /* Отменяет отступ сверху */
+        margin-bottom: 0 !important; /* Отменяет отступ снизу */
+        padding-bottom: 0 !important; /* Отменяет padding-bottom, если был */
+    }
+
+
+
+
+
+    .footer {
+        height: 100px;
+    }
+    .footer__title {
+        padding-top: 40px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
