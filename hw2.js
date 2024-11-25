@@ -32,6 +32,15 @@
 
 
 // ex5
-let result = 2 ** 5;
+// let result = 2 ** 5;
 
-alert(result);
+// alert(result);
+
+
+// ex6
+let a = 9;
+let b = 2;
+
+let remainder = a % b;
+
+alert(remainder);
