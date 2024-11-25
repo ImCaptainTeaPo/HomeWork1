@@ -29,3 +29,9 @@
 // alert("Произведение: " + (num1 * num2));
 
 // alert("Частное: " + (num1 / num2));
+
+
+// ex5
+let result = 2 ** 5;
+
+alert(result);
