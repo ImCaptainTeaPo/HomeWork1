@@ -28,6 +28,7 @@
         letter-spacing: 0px;
         text-align: center;
         padding-top: 147px;
+        padding-bottom: 24px;
     }
 
     .welcome__text {
@@ -43,7 +44,7 @@
     }
     .welcome__stars-star1 {
         left: 90px;
-        top: -422px;
+        top: -446px;
     }
     .star2 {
         width: 35px;
@@ -51,7 +52,7 @@
     }
     .welcome__stars-star2 {
         left: 40px;
-        top: -400px;
+        top: -424px;
     }
     .star3 {
         width: 18px;
@@ -80,7 +81,7 @@
         display: block;
         position: absolute;
         right: -90px;
-        top: -600px;
+        top: -624px;
     }
     .starmob {
         display: block;
