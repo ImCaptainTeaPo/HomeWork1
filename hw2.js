@@ -64,10 +64,16 @@
 
 
 // ex9
-let user = {
-    name: "Алексей",
-    age: 25,
-    isAdmin: true
-};
+// let user = {
+//     name: "Алексей",
+//     age: 25,
+//     isAdmin: true
+// };
 
-console.log(user);
+// console.log(user);
+
+
+// ex10
+let userName = prompt("Как вас зовут?");
+
+alert(`Привет, ${userName}!`);
