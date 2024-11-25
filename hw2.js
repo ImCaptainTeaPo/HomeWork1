@@ -74,6 +74,6 @@
 
 
 // ex10
-let userName = prompt("Как вас зовут?");
+// let userName = prompt("Как вас зовут?");
 
-alert(`Привет, ${userName}!`);
+// alert(`Привет, ${userName}!`);
