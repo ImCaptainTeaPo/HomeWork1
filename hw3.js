@@ -45,33 +45,33 @@
 // alert(+a + +b);
 
 // ex5
-let monthNumber = Number(prompt('Введите номер месяца (от 1 до 12):'));
+// let monthNumber = Number(prompt('Введите номер месяца (от 1 до 12):'));
 
-if (isNaN(monthNumber) || monthNumber < 1 || monthNumber > 12) {
-    console.log('Неверный номер месяца');
-} else {
-    switch (monthNumber) {
-        case 12:
-        case 1:
-        case 2:
-            console.log('Зима');
-            break;
-        case 3:
-        case 4:
-        case 5:
-            console.log('Весна');
-            break;
-        case 6:
-        case 7:
-        case 8:
-            console.log('Лето');
-            break;
-        case 9:
-        case 10:
-        case 11:
-            console.log('Осень');
-            break;
-        default:
-            console.log('Неверный номер месяца');
-    }
-}
+// if (isNaN(monthNumber) || monthNumber < 1 || monthNumber > 12) {
+//     console.log('Неверный номер месяца');
+// } else {
+//     switch (monthNumber) {
+//         case 12:
+//         case 1:
+//         case 2:
+//             console.log('Зима');
+//             break;
+//         case 3:
+//         case 4:
+//         case 5:
+//             console.log('Весна');
+//             break;
+//         case 6:
+//         case 7:
+//         case 8:
+//             console.log('Лето');
+//             break;
+//         case 9:
+//         case 10:
+//         case 11:
+//             console.log('Осень');
+//             break;
+//         default:
+//             console.log('Неверный номер месяца');
+//     }
+// }
