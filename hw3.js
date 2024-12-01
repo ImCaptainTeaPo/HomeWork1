@@ -1,16 +1,16 @@
 // ex1
-let password = 'пароль';
+// let password = 'пароль';
 
-let userInput = prompt('Введите пароль');
+// let userInput = prompt('Введите пароль');
 
-password = password.toLowerCase();
-userInput = userInput.toLowerCase();
+// password = password.toLowerCase();
+// userInput = userInput.toLowerCase();
 
-if (userInput === password) {
-    console.log('Пароль введен верно');
-} else {
-    console.log('Пароль введен неправильно');
-}
+// if (userInput === password) {
+//     console.log('Пароль введен верно');
+// } else {
+//     console.log('Пароль введен неправильно');
+// }
 
 
 // ex2
