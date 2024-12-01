@@ -33,10 +33,16 @@
 // }
 
 // ex4
+// let a = '2';
+// let b = '3';
+
+// alert(Number(a) + Number(b));
+
+
 let a = '2';
 let b = '3';
 
-alert(Number(a) + Number(b));
+alert(+a + +b);
 
 
 // ex5
