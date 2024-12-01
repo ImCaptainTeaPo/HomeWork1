@@ -23,17 +23,20 @@
 // }
 
 // ex3
-let d = 150;
-let e = 50;
+// let d = 150;
+// let e = 50;
 
-if (d > 100 || e > 100) {
-    console.log('Верно');
-} else {
-    console.log('Неверно');
-}
+// if (d > 100 || e > 100) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
 
 // ex4
+let a = '2';
+let b = '3';
 
+alert(Number(a) + Number(b));
 
 
 // ex5
