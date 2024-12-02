@@ -285,6 +285,9 @@ a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    width: 378px;
+    display: flex;
+    flex-direction: column;
 }
 
 .games__card:hover {
@@ -319,11 +322,35 @@ a {
     margin-top: 0;
 }
 
+.games__card--image1 .games__image {
+    background-image: url('./image/game1.jpeg');
+}
+
+.games__card--image2 .games__image {
+    background-image: url('./image/game2.jpeg');
+}
+
+.games__card--image3 .games__image {
+    background-image: url('./image/game3.jpeg');
+}
+
+.games__card--image4 .games__image {
+    background-image: url('./image/game4.jpeg');
+}
+
+.games__card--image5 .games__image {
+    background-image: url('./image/game5.jpeg');
+}
+
+.games__card--image6 .games__image {
+    background-image: url('./image/game6.jpeg');
+}
 .games__image {
     background-size: cover;
     background-position: center;
     height: 314px;
     width: 378px;
+    flex-shrink: 0;
 }
 
 .games__info {
@@ -332,6 +359,7 @@ a {
     padding-right: 32px;
     padding-bottom: 36px;
     text-align: left;
+    background-color: #fff;
 }
 
 .games__subtitle {
@@ -453,6 +481,7 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .mini-games__card:nth-child(2n) {
@@ -462,6 +491,47 @@ a {
 .mini-games__card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.mini-games__card--image1 {
+    background-image: url('./image/minigames1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.mini-games__card--image2 {
+    background-image: url('./image/minigames2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.mini-games__card--image3 {
+    background-image: url('./image/minigames3.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.mini-games__card--image4 {
+    background-image: url('./image/minigames4.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.mini-games__card--image5 {
+    background-image: url('./image/minigames5.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.mini-games__card--image6 {
+    background-image: url('./image/minigames6.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
 
 .mini-games__image {

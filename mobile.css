@@ -127,7 +127,7 @@
 
 /* блок МИНИ-ИГРЫ */
 
-    .games {
+    /* .games {
         padding: 48px 16px;
     }
 
@@ -200,7 +200,7 @@
         letter-spacing: 0%;
         text-align: center;
         width: 100%; /* Кнопка занимает всю ширину блока */
-        padding: 16px 0;
+/* padding: 16px 0;
         font-size: 16px;
         font-weight: 600;
         background-color: #202027;
@@ -222,13 +222,13 @@
     .games__card:nth-child(3),
     .games__card:nth-child(4),
     .games__card:nth-child(5),
-    .games__card:nth-child(6) {
-        margin-top: 0 !important; /* Отменяет отступ сверху */
-        margin-bottom: 0 !important; /* Отменяет отступ снизу */
-        padding-bottom: 0 !important; /* Отменяет padding-bottom, если был */
-    }
+    .games__card:nth-child(6) { */
+        /* margin-top: 0 !important; Отменяет отступ сверху */
+        /* margin-bottom: 0 !important; Отменяет отступ снизу */
+        /* padding-bottom: 0 !important; Отменяет padding-bottom, если был */
+    /* } */
 
-    .mini-games {
+    /* .mini-games {
         display: none;
     }
 
@@ -247,5 +247,93 @@
         line-height: 20px;
         letter-spacing: 0px;
         text-align: center;
+    } */
+    
+    .games {
+        display: none;
     }
+
+    .mini-games {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .mini-games__list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .mini-games__card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .mini-games__card:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .mini-games__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+
+    .mini-games__stars {
+        display: none;
+    }
+
+    .mini-games__image {
+        width: 100%;
+        height: 285px;
+    }
+
+    .mini-games__info {
+        padding: 29px;
+        text-align: center;
+        max-width: 343px;
+    }
+
+    .mini-games__name {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .mini-games__description {
+        padding-top: 16px;
+        padding-bottom: 32px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .mini-games__button {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+
 }
