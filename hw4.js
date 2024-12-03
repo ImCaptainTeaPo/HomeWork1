@@ -43,3 +43,27 @@ let daysInMonth = 31;
 for (let day = firstFriday; day <= daysInMonth; day += 7) {
     console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
+
+//не домашка, сохранить, если заработает
+function countFridaysOn13th(year) {
+    let friday13Count = 0;
+    let months = [];
+
+    for (let month = 0; month < 12; month++) {
+
+        let date = new Date(year, month, 13);
+
+        if (date.getDay() === 5) {
+            friday13Count++;
+            months.push(month + 1);
+        }
+    }
+
+    return { count: friday13Count, months: months };
+}
+
+let year = 2025;
+let result = countFridaysOn13th(year);
+
+console.log(`В ${year} году пятниц 13-го числа: ${result.count}`);
+console.log(`Они выпадают в следующих месяцах: ${result.months.join(', ')}`);
