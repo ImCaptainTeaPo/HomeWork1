@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
 
     /* Общие настройки */
     body {
@@ -44,7 +44,7 @@
     }
     .welcome__stars-star1 {
         left: 90px;
-        top: -446px;
+        top: -422px;
     }
     .star2 {
         width: 35px;
@@ -52,7 +52,7 @@
     }
     .welcome__stars-star2 {
         left: 40px;
-        top: -424px;
+        top: -390px;
     }
     .star3 {
         width: 18px;
@@ -61,7 +61,7 @@
     .welcome__stars-star3 {
         z-index: 3;
         left: 260px;
-        top: 46px;
+        top: 95px;
     }
     .star4 {
         width: 40px;
@@ -69,7 +69,7 @@
     }
     .welcome__stars-star4 {
         left: 270px;
-        top: 70px;
+        top: 120px;
     }
     .star5 {
         display: none;
@@ -81,7 +81,7 @@
         display: block;
         position: absolute;
         right: -90px;
-        top: -624px;
+        top: -580px;
     }
     .starmob {
         display: block;
@@ -92,6 +92,7 @@
         padding: 16px 28px;
         font-size: 16px;
         margin: 0 auto;
+        margin-bottom: 131px;
         display: block; /* Кнопка занимает всю строку */
         box-sizing: border-box;
     }
@@ -125,23 +126,32 @@
     }
 
 /* блок МИНИ-ИГРЫ */
-
     .games {
-        padding: 48px 16px;
-    }
-
-    .games__title {
-        display: none;
-    }
-    .games__text {
-        display: none;
-    }
-    .games__stars {
         display: none;
     }
 
-    .games__title-mob {
-        display: block;
+    .mini-games {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .mini-games__list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .mini-games__card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .mini-games__card:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .mini-games__title {
         color: rgb(255, 255, 255);
         font-family: Montserrat;
         font-size: 40px;
@@ -152,23 +162,22 @@
         padding-bottom: 48px;
     }
 
-    .games__list {
-        row-gap: 24px;
-    }
-
-    .games__card {
-        min-width: 343px;
-    }
-
-    .games__info {
-        padding: 30px;
-    }
-
-    .games__subtitle {
+    .mini-games__stars {
         display: none;
     }
 
-    .games__name {
+    .mini-games__image {
+        width: 100%;
+        height: 285px;
+    }
+
+    .mini-games__info {
+        padding: 29px;
+        text-align: center;
+        max-width: 343px;
+    }
+
+    .mini-games__name {
         color: rgb(32, 32, 39);
         font-family: Montserrat;
         font-size: 32px;
@@ -178,8 +187,9 @@
         text-align: left;
     }
 
-    .games__text-mob {
-        display: block;
+    .mini-games__description {
+        padding-top: 16px;
+        padding-bottom: 32px;
         color: rgb(0, 0, 0);
         font-family: Montserrat;
         font-size: 16px;
@@ -187,61 +197,20 @@
         line-height: 20px;
         letter-spacing: 0px;
         text-align: left;
-        padding-top: 16px;
-        padding-bottom: 32px;
     }
 
-    .games__button {
-        display: block;
+    .mini-games__button {
         color: rgb(255, 255, 255);
         font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
-        width: 100%; /* Кнопка занимает всю ширину блока */
-        padding: 16px 0;
-        font-size: 16px;
-        font-weight: 600;
-        background-color: #202027;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    .games__button:hover {
-        background-color: #ffffff;
-        color: #202027;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
-    
-    .games__card:nth-child(1),
-    .games__card:nth-child(2),
-    .games__card:nth-child(3),
-    .games__card:nth-child(4),
-    .games__card:nth-child(5),
-    .games__card:nth-child(6) {
-        margin-top: 0 !important; /* Отменяет отступ сверху */
-        margin-bottom: 0 !important; /* Отменяет отступ снизу */
-        padding-bottom: 0 !important; /* Отменяет padding-bottom, если был */
+        margin: 0 auto;
+        width: 100%;
     }
 
 
 
-
-
-    .footer {
-        height: 100px;
-    }
-    .footer__title {
-        padding-top: 40px;
-        color: rgb(0, 0, 0);
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: center;
-    }
 }

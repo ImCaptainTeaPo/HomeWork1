@@ -7,7 +7,7 @@
     <title>Сайт мини-игр</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 375px)">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 
         <div class="welcome__content center">
             <h1 class="welcome__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
-            <h1 class="welcome__title-mob">Добро пожаловать<br> <br>на мой сайт мини-игр</h1>
+            <h1 class="welcome__title-mob">Добро пожаловать<br>на мой сайт мини-игр</h1>
             <p class="welcome__text">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай
                 <strong>«Поехали»</strong> и <strong>приступай</strong>.
             </p>
@@ -89,8 +89,8 @@
             </div>
             <div class="games__list">
                 <!-- Карточка 1 -->
-                <a href="#game1" class="games__card">
-                    <div class="games__image" style="background-image: url(image/game1.jpeg);"></div>
+                <a href="#guess-number" class="games__card games__card--image1">
+                    <div class="games__image"></div>
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №1</h3>
                         <p class="games__name">Угадай число</p>
@@ -99,8 +99,8 @@
                     </div>
                 </a>
                 <!-- Карточка 2 -->
-                <a href="#game2" class="games__card">
-                    <div class="games__image" style="background-image: url(image/game2.jpeg);"></div>
+                <a href="#simple-game" class="games__card games__card--image2">
+                    <div class="games__image"></div>
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №2</h3>
                         <p class="games__name">Простая арифметика</p>
@@ -109,8 +109,8 @@
                     </div>
                 </a>
                 <!-- Карточка 3 -->
-                <a href="#game3" class="games__card">
-                    <div class="games__image" style="background-image: url(image/game3.jpeg);"></div>
+                <a href="#reverse-text" class="games__card games__card--image3">
+                    <div class="games__image"></div>
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №3</h3>
                         <p class="games__name">Переверни текст</p>
@@ -119,44 +119,127 @@
                     </div>
                 </a>
                 <!-- Карточка 4 -->
-                <a href="#game4" class="games__card">
-                    <div class="games__image" style="background-image: url(image/game4.jpeg);"></div>
+                <a href="#rock-paper-scissors" class="games__card games__card--image4">
+                    <div class="games__image"></div>
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №4</h3>
                         <p class="games__name">Камень, ножницы, бумага</p>
-                        <p class="games__text-mob">Отвечай на вопросы викторины с&nbsp;вариантами ответов.</p>
-                        <button class="games__button">Играть!</button>
-                    </div>
-                </a>
-                <!-- Карточка 5 -->
-                <a href="#game5" class="games__card">
-                    <div class="games__image" style="background-image: url(image/game5.jpeg);"></div>
-                    <div class="games__info">
-                        <h3 class="games__subtitle">Игра №5</h3>
-                        <p class="games__name">Простая викторина</p>
                         <p class="games__text-mob">Сыграй в популярную игру против&nbsp;компьютера.</p>
                         <button class="games__button">Играть!</button>
                     </div>
                 </a>
+                <!-- Карточка 5 -->
+                <a href="#quiz" class="games__card games__card--image5">
+                    <div class="games__image"></div>
+                    <div class="games__info">
+                        <h3 class="games__subtitle">Игра №5</h3>
+                        <p class="games__name">Простая викторина</p>
+                        <p class="games__text-mob">Ответь на вопросы викторины с&nbsp;вариантами ответов.</p>
+                        <button class="games__button">Играть!</button>
+                    </div>
+                </a>
                 <!-- Карточка 6 -->
-                <a href="#game6" class="games__card">
-                    <div class="games__image" style="background-image: url(image/game6.jpeg);"></div>
+                <a href="#random-colors" class="games__card games__card--image6">
+                    <div class="games__image"></div>
                     <div class="games__info">
                         <h3 class="games__subtitle">Игра №6</h3>
                         <p class="games__name">Генератор случайных цветов</p>
-                        <p class="games__text-mob">Игра, в которой при клике на&nbsp;кнопку фон страницы
-                            меняется&nbsp;на
-                            случайный.</p>
+                        <p class="games__text-mob">Игра, в которой при клике на&nbsp;кнопку фон страницы меняется&nbsp;на случайный.</p>
                         <button class="games__button">Играть!</button>
                     </div>
                 </a>
             </div>
         </div>
     </section>
+    
+    <!-- Блок "мини-игры" -->
+    <section class="mini-games" id="mini-games">
+        <div class="mini-games__container">
+            <h2 class="mini-games__title">Мини-игры</h2>
+            <div class="mini-games__stars center">
+                <div class="mini-games__stars-star1"><img class="mini-games-star1" src="image/stargreenoutline.svg"
+                        alt="">
+                </div>
+                <div class="mini-games__stars-star2"><img class="mini-games-star2" src="image/stargreenoutline.svg"
+                        alt="">
+                </div>
+                <div class="mini-games__stars-star3"><img class="mini-games-star3" src="image/stargreenoutline.svg"
+                        alt="">
+                </div>
+                <div class="mini-games__stars-star4"><img class="mini-games-star4" src="image/stargreenoutline.svg"
+                        alt="">
+                </div>
+            </div>
+            <div class="mini-games__list">
+                <!-- Карточка 1 -->
+                <div id="#guess-number" class="mini-games__card">
+                    <div class="mini-games__image mini-games__card--image1"></div>
+                    <div class="mini-games__info">
+                        <h3 class="mini-games__name">Угадай число</h3>
+                        <p class="mini-games__description">Попробуй угадать случайное число&nbsp;от&nbsp;1&nbsp;до 100.
+                        </p>
+                        <button class="mini-games__button">Играть!</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div id="#simple-game" class="mini-games__card">
+                    <div class="mini-games__image mini-games__card--image2"></div>
+                    <div class="mini-games__info">
+                        <h3 class="mini-games__name">Простая арифметика</h3>
+                        <p class="mini-games__description">Попробуй решить простые арифметические задачи.</p>
+                        <button class="mini-games__button">Играть!</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div id="#reverse-text" class="mini-games__card">
+                    <div class="mini-games__image mini-games__card--image3"></div>
+                    <div class="mini-games__info">
+                        <h3 class="mini-games__name">Переверни текст</h3>
+                        <p class="mini-games__description">Попробуй ввести текст, который будет&nbsp;перевёрнут.</p>
+                        <button class="mini-games__button">Играть!</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div id="#quiz" class="mini-games__card">
+                    <div class="mini-games__image mini-games__card--image4"></div>
+                    <div class="mini-games__info">
+                        <h3 class="mini-games__name">Викторина</h3>
+                        <p class="mini-games__description">Отвечай на вопросы викторины с&nbsp;вариантами ответов.</p>
+                        <button class="mini-games__button">Играть!</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div id="#rock-paper-scissors" class="mini-games__card">
+                    <div class="mini-games__image mini-games__card--image5"></div>
+                    <div class="mini-games__info">
+                        <h3 class="mini-games__name">Камень,<br>ножницы,<br>бумага</h3>
+                        <p class="mini-games__description">Сыграй в популярную игру против&nbsp;компьютера.</p>
+                        <button class="mini-games__button">Играть!</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div id="#random-colors" class="mini-games__card">
+                    <div class="mini-games__image mini-games__card--image6"></div>
+                    <div class="mini-games__info">
+                        <h3 class="mini-games__name">Генератор случайных<br>цветов</h3>
+                        <p class="mini-games__description">Игра, в которой при клике на кнопку фон страницы меняется на
+                            случайный.</p>
+                        <button class="mini-games__button">Играть!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <h2 class="footer__title">Все права защищены.</h2>
     </footer>
-    <script src="./hw2.js"></script>
+    <script src="./hw3.js"></script>
 </body>
 
 </html>
