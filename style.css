@@ -17,6 +17,10 @@ a {
     padding-right: calc(50% - 600px);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Блок "Добро пожаловать на мой сайт мини-игр" */
 .welcome {
     background-image: url(./image/gbtop.jpeg);
