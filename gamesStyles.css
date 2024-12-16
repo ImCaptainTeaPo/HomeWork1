@@ -1,0 +1,140 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Montserrat;
+    padding: 0;
+    background: linear-gradient(to bottom right, #7109AA, #aa4fdb, #b875df);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Блок: game */
+.game {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: #202027;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    height: 600px;
+    width: 100%;
+}
+
+.game__title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.game__description {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.game__input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.game__input {
+    font-family: inherit;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    width: 180px;
+    text-align: center;
+}
+
+.game__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 191px;
+    padding: 16px 28px 16px 28px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.game__button:hover {
+    background-color: #ffffff;
+    border: 1px solid rgb(32, 32, 39);
+    color: black;
+}
+
+.game__button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.game__feedback {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.game__attempts {
+    font-size: 2rem;
+}
+
+/* Стили для планшета */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .game {
+        max-width: 600px;
+    }
+}
+/* Стили для смартфона */
+@media screen and (max-width: 600px) {
+    .game {
+        max-width: 300px;
+    }
+
+    .game__title {
+        font-size: 2rem;
+    }
+
+    .game__description {
+        font-size: 1.2rem;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .game__input-group {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .game__input {
+        height: 50px;
+    }
+
+    .game__feedback {
+        margin: 0;
+    }
+}
