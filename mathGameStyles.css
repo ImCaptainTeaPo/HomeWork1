@@ -97,54 +97,42 @@ body {
     .game {
         max-width: 600px;
     }
-
-    .game__title {
-        font-size: 3rem;
-    }
-
-    .game__description {
-        font-size: 1.5rem;
-    }
-
-    .game__input {
-        font-size: 1.2rem;
-    }
-
-    .game__button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
 }
-
 /* Стили для смартфона */
 @media screen and (max-width: 600px) {
     .game {
-        max-width: 320px;
+        max-width: 300px;
     }
 
     .game__title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .game__description {
         font-size: 1.2rem;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .game__input-group {
-        gap: 10px;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
     }
 
     .game__input {
-        font-size: 1rem;
-        padding: 10px;
+        width: 253px;
     }
 
     .game__button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+        width: 253px;
     }
 
     .game__feedback {
+        margin: 0;
         font-size: 1.5rem;
     }
 }
