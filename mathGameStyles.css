@@ -1,0 +1,150 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Montserrat;
+    padding: 0;
+    background: linear-gradient(to bottom right, #e7cf63, #ebb032, #e6a314);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Блок: game */
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #202027;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    height: 600px;
+    width: 100%;
+}
+
+.game__title {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.game__description {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.game__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.game__input {
+    font-family: inherit;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    border: none;
+    width: 353px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.game__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    border: 1px solid #ffffff;
+    background: rgb(32, 32, 39);
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    width: 353px;
+}
+
+.game__button:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: rgb(32, 32, 39);
+}
+
+.game__button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.game__feedback {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Стили для планшета */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .game {
+        max-width: 600px;
+    }
+
+    .game__title {
+        font-size: 3rem;
+    }
+
+    .game__description {
+        font-size: 1.5rem;
+    }
+
+    .game__input {
+        font-size: 1.2rem;
+    }
+
+    .game__button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Стили для смартфона */
+@media screen and (max-width: 600px) {
+    .game {
+        max-width: 320px;
+    }
+
+    .game__title {
+        font-size: 2.5rem;
+    }
+
+    .game__description {
+        font-size: 1.2rem;
+    }
+
+    .game__input-group {
+        gap: 10px;
+    }
+
+    .game__input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .game__button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .game__feedback {
+        font-size: 1.5rem;
+    }
+}

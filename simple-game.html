@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математическая игра</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mathGameStyles.css">
+</head>
+<body>
+    <div class="game">
+        <h1 class="game__title">Математическая игра</h1>
+        <p class="game__description">Решите задачу и проверьте свой результат!</p>
+        <div class="game__input-group">
+            <p id="math-task" class="game__description">Задача: 5 + 3</p>
+            <input type="number" id="user-answer" class="game__input" placeholder="Ваш ответ">
+            <button id="check-answer" class="game__button" onclick="checkAnswer()">Проверить</button>
+        </div>
+        <p id="result" class="game__feedback"></p>
+    </div>
+    <script src="math-game.js"></script>
+</body>
+</html>
