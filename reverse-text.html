@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра «Переверни текст»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reverseTextGame.css">
+</head>
+<body>
+    <div class="game">
+        <h1 class="game__title">Переверни текст</h1>
+        <p class="game__description">Введите текст, и мы его перевернем!</p>
+        <div class="game__input-group">
+            <input type="text" id="user-text" class="game__input" placeholder="Введите текст">
+            <button id="reverse-button" class="game__button" onclick="reverseText()">Перевернуть</button>
+        </div>
+        <p id="reversed-text" class="game__feedback"></p>
+    </div>
+    <script src="reverseTextGame.js"></script>
+</body>
+</html>

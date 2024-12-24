@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра «Викторина»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quizGame.css">
+</head>
+<body>
+    <div class="game">
+        <h1 class="game__title">Викторина</h1>
+        <p class="game__description">Ответьте на несколько вопросов и проверьте свои знания!</p>
+        <div id="quiz-container" class="game__input-group">
+            <!-- Вопросы и варианты ответов будут генерироваться здесь -->
+        </div>
+        <button id="submit-quiz" class="game__button" onclick="submitQuiz()">Завершить</button>
+        <p id="quiz-result" class="game__feedback"></p>
+    </div>
+    <script src="quizGame.js"></script>
+</body>
+</html>
