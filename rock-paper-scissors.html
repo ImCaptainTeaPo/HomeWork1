@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+<body>
+    <div class="game">
+        <h1 class="game__title">Камень, ножницы, бумага</h1>
+        <p class="game__description">Сделайте свой выбор и узнайте, кто победит!</p>
+        <div class="game__input-group">
+            <button class="game__button" onclick="playGame('камень')">Камень</button>
+            <button class="game__button" onclick="playGame('ножницы')">Ножницы</button>
+            <button class="game__button" onclick="playGame('бумага')">Бумага</button>
+        </div>
+        <p id="result" class="game__feedback"></p>
+    </div>
+    <script src="rock-paper-scissors.js"></script>
+</body>
+</html>
