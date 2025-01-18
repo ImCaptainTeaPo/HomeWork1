@@ -8,7 +8,7 @@ function getRandomColor() {
     return color;
 }
 
-// Функция для изменения фона на радиальный градиент из 5 цветов
+// Функция для изменения фона на радиальный градиент из 3 цветов
 function changeBackgroundColor() {
     const colors = Array.from({ length: 3 }, () => getRandomColor());
     const gradient = `radial-gradient(circle, ${colors.join(", ")})`;
