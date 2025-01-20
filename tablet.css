@@ -112,6 +112,7 @@
     .mini-games__stars-star2 {
         left: 640px;
         top: -75px;
+        width: 72px;
     }
     .mini-games-star3 {
         display: none;

@@ -1,0 +1,117 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    padding: 0;
+    background-color: black; /* Изначально фон черный */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease; /* Плавное изменение цвета */
+}
+
+/* Блок: game */
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e2432;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    height: auto;
+    width: 100%;
+}
+
+.game__title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.game__description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.game__input-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.game__button {
+    padding: 12px 25px;
+    border: 1px solid #ffffff;
+    background: rgb(32, 32, 39);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.game__button:hover {
+    background-color: #ffffff;
+    border: 1px solid rgb(32, 32, 39);
+    color: black;
+}
+
+/* Стили для планшета */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .game {
+        max-width: 600px;
+    }
+
+    .game__input-group {
+        padding: 0;
+    }
+
+    .game__title {
+        font-size: 2.5rem;
+    }
+
+    .game__description {
+        font-size: 1.2rem;
+    }
+
+    .game__button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Стили для смартфона */
+@media screen and (max-width: 600px) {
+    .game {
+        max-width: 320px;
+    }
+
+    .game__input-group {
+        padding: 0;
+    }
+
+    .game__title {
+        font-size: 2rem;
+    }
+
+    .game__description {
+        font-size: 1rem;
+    }
+
+    .game__input-group {
+        gap: 8px;
+    }
+
+    .game__button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
